@@ -68,6 +68,9 @@ background-color: $colorFondo;
     color: $colorResaltado;
 }
 
+
+
+
 /*------------------------------------*\
   #Personal 
 \*------------------------------------*/
@@ -137,7 +140,7 @@ background-color: $colorFondo;
                 text-decoration: none;
             }
 
-            .perfildatos--enlaces:hover{
+            .perfildatos--hover:hover{
             color: $colorHover;
             }
         }
@@ -171,7 +174,7 @@ background-color: $colorFondo;
                 text-decoration: none;
                 font-style: italic;
             }
-            .contenedortecnico--enlaces:hover{
+            .contenedortecnico--hover:hover{
             color: $colorHover;
             }
             .contenedortecnico__h1{
