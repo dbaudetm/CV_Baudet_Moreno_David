@@ -3,6 +3,7 @@
  *
  * Variables:
  * 
+ * Funciones:
  *
  * Body
  *
@@ -29,9 +30,15 @@ $colorHover: #7e7676;
 $colorResaltado : #ffffff;
 
 
-
-
-
+/*------------------------------------*\
+  #Funciones
+\*------------------------------------*/
+@function anchoBarraNormal() {
+    @return 90%;
+  }
+@function anchoBarraMovil() {
+    @return 60%;
+  }
 /*------------------------------------*\
   #Body
 \*------------------------------------*/
@@ -207,35 +214,35 @@ background-color: $colorFondo;
             }
             #python{
                     margin: 10px;
-                    width: 400px;
+                    width: anchoBarraNormal();
                     height: 4px;
                     position: relative;
                     margin-bottom: 50px;
             }
             #java{
                 margin: 10px;
-                width: 400px;
+                width: anchoBarraNormal();
                 height: 4px;
                 position: relative;
                 margin-bottom: 50px;
             }
             #c{
                 margin: 10px;
-                width: 400px;
+                width: anchoBarraNormal();
                 height: 4px;
                 position: relative;
                 margin-bottom: 50px;
             }
             #angular{
                 margin: 10px;
-                width: 400px;
+                width: anchoBarraNormal();
                 height: 4px;
                 position: relative;
                 margin-bottom: 50px;
             }
             #react{
                 margin: 10px;
-                width: 400px;
+                width: anchoBarraNormal();
                 height: 4px;
                 position: relative;
                 margin-bottom: 50px;
@@ -354,35 +361,35 @@ background-color: $colorFondo;
             }
                 #python{
                         margin: 10px;
-                        width: 200px;
+                        width: anchoBarraMovil();
                         height: 4px;
                         position: relative;
                         margin-bottom: 20px;
                 }
                 #java{
                     margin: 10px;
-                    width: 200px;
+                    width: anchoBarraMovil();
                     height: 4px;
                     position: relative;
                     margin-bottom: 20px;
                 }
                 #c{
                     margin: 10px;
-                    width: 200px;
+                    width: anchoBarraMovil();
                     height: 4px;
                     position: relative;
                     margin-bottom: 20px;
                 }
                 #angular{
                     margin: 10px;
-                    width: 200px;
+                    width: anchoBarraMovil();
                     height: 4px;
                     position: relative;
                     margin-bottom: 20px;
                 }  
                 #react{
                     margin: 10px;
-                    width: 200px;
+                    width: anchoBarraMovil();
                     height: 4px;
                     position: relative;
                     margin-bottom: 20px;
