@@ -1,0 +1,391 @@
+/**
+ * CONTENTS
+ *
+ * Variables:
+ * Global...............Globally-available variables and config.
+ *
+ * Body
+ *
+ * Contenedor principal (contendor)
+ *
+ * Personal (contenedor izquierda)
+ *
+ * Tecnico (contenedor derecho)
+ *
+ * Media Querys
+ */
+
+
+
+
+/*------------------------------------*\
+  #Variables
+\*------------------------------------*/
+
+$colorFondo: #9db5ff;
+$colorPersonal: #072955;
+$colorTecnico: #d1d2d4;
+$colorHover: #7e7676;
+$colorResaltado : #ffffff;
+
+
+
+
+
+/*------------------------------------*\
+  #Body
+\*------------------------------------*/
+
+body{
+display: flex;
+justify-content: center;
+align-items: center;
+background-color: $colorFondo;
+}
+
+
+
+
+/*------------------------------------*\
+  #Contenedor principal
+\*------------------------------------*/
+
+.contenedor{
+    padding: 30px;
+    display: grid;
+    margin: 40px;
+    grid-template-columns: 2fr 4fr;
+    max-width: 1000px;
+    min-height: 1000px;
+    color: $colorResaltado;
+}
+
+
+
+
+
+
+/*------------------------------------*\
+  #Personal 
+\*------------------------------------*/
+
+    .personal{
+        position: relative;
+        background-color: $colorPersonal;
+        box-shadow: 5px 10px 8px $colorHover;
+        border-radius: 25px 0 0 25px;
+    }
+        .seccionperfil{
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+        }
+            .perfilimagen{
+                padding-top: 40px;
+            }
+                .perfilimagen__img{
+                        border-radius:50%;
+                        width: 70%;
+                        align-items: center;
+                        display:block;
+                        margin:auto;
+                }
+            .perfiltitulo{
+                margin-top: 20px;
+            }
+                .perfiltitulo__h1{
+                    margin: 1px;
+                    margin-bottom: 10px;
+                    font-size: 25px ;
+                    text-transform: uppercase;
+                    color: $colorResaltado;
+                    font-weight: 700;
+                    text-align: center;
+                }
+                .perfiltitulo__h2{
+                    margin: 1px;
+                    margin-bottom: 20px;
+                    font-size: 20px ;
+                    color: $colorResaltado;
+                    align-items: center;
+                    text-align: center;
+                }
+
+
+            .perfildatos__h1{
+                margin: 5px;
+                align-items: center;
+                color: $colorResaltado;
+                font-weight: bold;
+                font-size: 1.5em;
+                margin-top: 20px;
+                line-height: 1.4em;
+            }
+            .perfildatos__li{
+                font-weight: bold;
+                margin: 5px;
+                list-style-type: none;
+            }
+            .perfildatos__span{
+                color: $colorResaltado;
+                font-weight: normal;
+                margin: 5px;
+            }
+            .perfildatos__enlaces{
+                color: $colorResaltado;
+                font-weight: bold;
+                border-style: none;
+                text-decoration: none;
+            }
+
+            .perfildatos--enlaces:hover{
+            color: $colorHover;
+            }
+
+
+
+
+
+/*------------------------------------*\
+  #Tecnico
+\*------------------------------------*/
+
+    .tecnico{
+        flex-wrap: wrap;
+        position: relative;
+        background-color: $colorTecnico;
+        box-shadow: 5px 10px 8px $colorHover;
+        border-radius: 0 25px  25px 0;
+    }
+        .secciontecnica{
+            align-items: left;
+            display: flex;
+            flex-direction: column;
+        }
+            .contenedortecnico__enlaces{
+                color: $colorPersonal;
+                font-weight: normal;
+                border-style: none;
+                text-decoration: none;
+                font-style: italic;
+            }
+            .contenedortecnico--enlaces:hover{
+            color: $colorHover;
+            }
+            .contenedortecnico h1{
+                margin: 5px;
+                align-items: center;
+                color: $colorPersonal;
+                font-weight: bold;
+                font-size: 1.5em;
+                margin-top: 20px;
+                line-height: 1.4em;
+            }
+            .contenedortecnico__li{
+                font-weight: bold;
+                margin: 5px;
+                color: $colorPersonal;
+                list-style-type: none;
+            }
+            .contenedortecnico__ul {
+         
+                list-style-type: none;
+                font-weight: normal;
+                margin: 10px;
+                color: $colorPersonal;
+           
+            }
+            .contenedortecnico__span{
+                color: $colorPersonal;
+                font-weight: normal;
+                margin: 5px;
+            }
+            .contenedortecnico__institucion{
+                color: $colorPersonal;
+                font-style: italic;
+                margin: 5px;
+            }
+            #python{
+                    margin: 10px;
+                    width: 400px;
+                    height: 4px;
+                    position: relative;
+                    margin-bottom: 50px;
+            }
+            #java{
+                margin: 10px;
+                width: 400px;
+                height: 4px;
+                position: relative;
+                margin-bottom: 50px;
+            }
+            #c{
+                margin: 10px;
+                width: 400px;
+                height: 4px;
+                position: relative;
+                margin-bottom: 50px;
+            }
+            #angular{
+                margin: 10px;
+                width: 400px;
+                height: 4px;
+                position: relative;
+                margin-bottom: 50px;
+            }
+            #react{
+                margin: 10px;
+                width: 400px;
+                height: 4px;
+                position: relative;
+                margin-bottom: 50px;
+            }
+
+
+
+
+
+
+
+/*------------------------------------*\
+  #Media Qwery
+\*------------------------------------*/
+
+
+@media (max-width: 800px){
+    .contenedor{
+        width: auto;
+        padding: 10px;
+        margin:0;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .perfilimagen{
+        padding-top: 40px;    
+    }
+    .perfilimagen__img{
+            border-radius:50%;
+            width: 30%;
+            align-items: center;
+            display:block;
+            margin:auto;
+    }
+    .perfildatos__li{
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .personal{
+        box-shadow: 5px 10px 8px $colorHover;
+        border-radius: 25px 25px 0 0;
+    }
+    .tecnico{
+        box-shadow: 5px 10px 8px $colorHover;
+        border-radius: 0  0  25px 25px;
+    }
+}
+@media (max-width: 400px){
+    .contenedor{
+        width: auto;
+        padding: 10px;
+        margin:0;
+        grid-template-columns: repeat(1,1fr);
+    }
+        .perfilimagen{
+        padding-top: 40px;
+        }
+            .perfilimagen__img{
+                border-radius:50%;
+                width: 30%;
+                align-items: center;
+                display:block;
+                margin:auto;
+            }
+        .perfildatos__li{
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        .personal{
+            box-shadow: 5px 10px 8px $colorHover;
+            border-radius: 25px 25px 0 0;
+        }
+}
+
+@media (max-width: 1000px){
+        .contenedor{
+            padding: 1px;
+            margin:0;
+            grid-template-columns: repeat(1,1fr);
+        }
+            .perfilimagen{
+                padding-top: 40px;
+            }
+                .perfilimagen__img{
+                        border-radius:50%;
+                        width: 30%;
+                        align-items: center;
+                        display:block;
+                        margin:auto;
+                }
+
+            .perfildatos__li{
+                margin-top: 20px;
+                margin-bottom: 20px;
+            }
+        .personal{
+            box-shadow: 5px 10px 8px $colorHover;
+            border-radius: 25px 25px 0 0;
+        }
+        .tecnico{
+            box-shadow: 5px 10px 8px $colorHover;
+            border-radius: 0  0  25px 25px;
+        }
+        .secciontecnica{
+            position: relative;
+            margin-left: 30px;
+            margin-right: 10px;
+            margin-bottom: 50px;
+        }
+            .contenedortecnico__h1{
+                margin: 1px;
+                margin-bottom: 10px;
+                font-size: 25px ;
+                text-transform: uppercase;
+                font-weight: 700;
+                text-align: center;
+            }
+                #python{
+                        margin: 10px;
+                        width: 200px;
+                        height: 4px;
+                        position: relative;
+                        margin-bottom: 20px;
+                }
+                #java{
+                    margin: 10px;
+                    width: 200px;
+                    height: 4px;
+                    position: relative;
+                    margin-bottom: 20px;
+                }
+                #c{
+                    margin: 10px;
+                    width: 200px;
+                    height: 4px;
+                    position: relative;
+                    margin-bottom: 20px;
+                }
+                #angular{
+                    margin: 10px;
+                    width: 200px;
+                    height: 4px;
+                    position: relative;
+                    margin-bottom: 20px;
+                }  
+                #react{
+                    margin: 10px;
+                    width: 200px;
+                    height: 4px;
+                    position: relative;
+                    margin-bottom: 20px;
+                }
+    
+}
