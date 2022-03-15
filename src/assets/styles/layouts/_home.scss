@@ -23,11 +23,9 @@
   #Variables
 \*------------------------------------*/
 
-$colorFondo: #9db5ff;
-$colorPersonal: #072955;
-$colorTecnico: #d1d2d4;
-$colorHover: #7e7676;
-$colorResaltado : #ffffff;
+@import "../variables";
+
+
 
 
 /*------------------------------------*\
@@ -39,6 +37,9 @@ $colorResaltado : #ffffff;
 @function anchoBarraMovil() {
     @return 60%;
   }
+
+
+
 /*------------------------------------*\
   #Body
 \*------------------------------------*/
@@ -67,11 +68,6 @@ background-color: $colorFondo;
     color: $colorResaltado;
 }
 
-
-
-
-
-
 /*------------------------------------*\
   #Personal 
 \*------------------------------------*/
@@ -81,25 +77,22 @@ background-color: $colorFondo;
         background-color: $colorPersonal;
         box-shadow: 5px 10px 8px $colorHover;
         border-radius: 25px 0 0 25px;
-    }
         .seccionperfil{
             align-items: center;
             display: flex;
             flex-direction: column;
-        }
             .perfilimagen{
                 padding-top: 40px;
-            }
                 .perfilimagen__img{
-                        border-radius:50%;
-                        width: 70%;
-                        align-items: center;
-                        display:block;
-                        margin:auto;
-                }
+                    border-radius:50%;
+                    width: 70%;
+                    align-items: center;
+                    display:block;
+                    margin:auto;
+            }
+            }
             .perfiltitulo{
                 margin-top: 20px;
-            }
                 .perfiltitulo__h1{
                     margin: 1px;
                     margin-bottom: 10px;
@@ -117,8 +110,7 @@ background-color: $colorFondo;
                     align-items: center;
                     text-align: center;
                 }
-
-
+            }
             .perfildatos__h1{
                 margin: 5px;
                 align-items: center;
@@ -148,6 +140,10 @@ background-color: $colorFondo;
             .perfildatos--enlaces:hover{
             color: $colorHover;
             }
+        }
+    }
+         
+            
 
 
 
@@ -168,7 +164,6 @@ background-color: $colorFondo;
             align-items: left;
             display: flex;
             flex-direction: column;
-        }
             .contenedortecnico__enlaces{
                 color: $colorPersonal;
                 font-weight: normal;
@@ -179,7 +174,7 @@ background-color: $colorFondo;
             .contenedortecnico--enlaces:hover{
             color: $colorHover;
             }
-            .contenedortecnico h1{
+            .contenedortecnico__h1{
                 margin: 5px;
                 align-items: center;
                 color: $colorPersonal;
@@ -247,6 +242,8 @@ background-color: $colorFondo;
                 position: relative;
                 margin-bottom: 50px;
             }
+        }
+            
 
 
 
@@ -266,28 +263,30 @@ background-color: $colorFondo;
         margin:0;
         grid-template-columns: repeat(1,1fr);
     }
-    .perfilimagen{
-        padding-top: 40px;    
-    }
-    .perfilimagen__img{
-            border-radius:50%;
-            width: 30%;
-            align-items: center;
-            display:block;
-            margin:auto;
-    }
-    .perfildatos__li{
-        margin-top: 20px;
-        margin-bottom: 20px;
-    }
-    .personal{
-        box-shadow: 5px 10px 8px $colorHover;
-        border-radius: 25px 25px 0 0;
-    }
-    .tecnico{
-        box-shadow: 5px 10px 8px $colorHover;
-        border-radius: 0  0  25px 25px;
-    }
+        .personal{
+            box-shadow: 5px 10px 8px $colorHover;
+            border-radius: 25px 25px 0 0;
+        }
+            .perfilimagen{
+                padding-top: 40px;    
+            }
+            .perfilimagen__img{
+                    border-radius:50%;
+                    width: 30%;
+                    align-items: center;
+                    display:block;
+                    margin:auto;
+            }
+            .perfildatos__li{
+                margin-top: 20px;
+                margin-bottom: 20px;
+            }
+        .tecnico{
+            box-shadow: 5px 10px 8px $colorHover;
+            border-radius: 0  0  25px 25px;
+        }
+    
+    
 }
 @media (max-width: 400px){
     .contenedor{
@@ -296,24 +295,25 @@ background-color: $colorFondo;
         margin:0;
         grid-template-columns: repeat(1,1fr);
     }
-        .perfilimagen{
-        padding-top: 40px;
-        }
-            .perfilimagen__img{
-                border-radius:50%;
-                width: 30%;
-                align-items: center;
-                display:block;
-                margin:auto;
-            }
-        .perfildatos__li{
-            margin-top: 20px;
-            margin-bottom: 20px;
-        }
         .personal{
             box-shadow: 5px 10px 8px $colorHover;
             border-radius: 25px 25px 0 0;
         }
+            .perfilimagen{
+            padding-top: 40px;
+            }
+                .perfilimagen__img{
+                    border-radius:50%;
+                    width: 30%;
+                    align-items: center;
+                    display:block;
+                    margin:auto;
+                }
+            .perfildatos__li{
+                margin-top: 20px;
+                margin-bottom: 20px;
+            }
+        
 }
 
 @media (max-width: 1000px){
@@ -322,77 +322,78 @@ background-color: $colorFondo;
             margin:0;
             grid-template-columns: repeat(1,1fr);
         }
-            .perfilimagen{
-                padding-top: 40px;
+            .personal{
+                box-shadow: 5px 10px 8px $colorHover;
+                border-radius: 25px 25px 0 0;
             }
-                .perfilimagen__img{
-                        border-radius:50%;
-                        width: 30%;
-                        align-items: center;
-                        display:block;
-                        margin:auto;
+                .perfilimagen{
+                    padding-top: 40px;
                 }
+                    .perfilimagen__img{
+                            border-radius:50%;
+                            width: 30%;
+                            align-items: center;
+                            display:block;
+                            margin:auto;
+                    }
 
-            .perfildatos__li{
-                margin-top: 20px;
-                margin-bottom: 20px;
+                .perfildatos__li{
+                    margin-top: 20px;
+                    margin-bottom: 20px;
+                }
+            
+            .tecnico{
+                box-shadow: 5px 10px 8px $colorHover;
+                border-radius: 0  0  25px 25px;
             }
-        .personal{
-            box-shadow: 5px 10px 8px $colorHover;
-            border-radius: 25px 25px 0 0;
-        }
-        .tecnico{
-            box-shadow: 5px 10px 8px $colorHover;
-            border-radius: 0  0  25px 25px;
-        }
-        .secciontecnica{
-            position: relative;
-            margin-left: 30px;
-            margin-right: 10px;
-            margin-bottom: 50px;
-        }
-            .contenedortecnico__h1{
-                margin: 1px;
-                margin-bottom: 10px;
-                font-size: 25px ;
-                text-transform: uppercase;
-                font-weight: 700;
-                text-align: center;
+            .secciontecnica{
+                position: relative;
+                margin-left: 30px;
+                margin-right: 10px;
+                margin-bottom: 50px;
             }
-                #python{
+                .contenedortecnico__h1{
+                    margin: 1px;
+                    margin-bottom: 10px;
+                    font-size: 25px ;
+                    text-transform: uppercase;
+                    font-weight: 700;
+                    text-align: center;
+                }
+                    #python{
+                            margin: 10px;
+                            width: anchoBarraMovil();
+                            height: 4px;
+                            position: relative;
+                            margin-bottom: 20px;
+                    }
+                    #java{
                         margin: 10px;
                         width: anchoBarraMovil();
                         height: 4px;
                         position: relative;
                         margin-bottom: 20px;
-                }
-                #java{
-                    margin: 10px;
-                    width: anchoBarraMovil();
-                    height: 4px;
-                    position: relative;
-                    margin-bottom: 20px;
-                }
-                #c{
-                    margin: 10px;
-                    width: anchoBarraMovil();
-                    height: 4px;
-                    position: relative;
-                    margin-bottom: 20px;
-                }
-                #angular{
-                    margin: 10px;
-                    width: anchoBarraMovil();
-                    height: 4px;
-                    position: relative;
-                    margin-bottom: 20px;
-                }  
-                #react{
-                    margin: 10px;
-                    width: anchoBarraMovil();
-                    height: 4px;
-                    position: relative;
-                    margin-bottom: 20px;
-                }
+                    }
+                    #c{
+                        margin: 10px;
+                        width: anchoBarraMovil();
+                        height: 4px;
+                        position: relative;
+                        margin-bottom: 20px;
+                    }
+                    #angular{
+                        margin: 10px;
+                        width: anchoBarraMovil();
+                        height: 4px;
+                        position: relative;
+                        margin-bottom: 20px;
+                    }  
+                    #react{
+                        margin: 10px;
+                        width: anchoBarraMovil();
+                        height: 4px;
+                        position: relative;
+                        margin-bottom: 20px;
+                    }
     
 }

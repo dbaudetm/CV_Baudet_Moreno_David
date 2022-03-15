@@ -18,7 +18,7 @@
         "no-duplicate-selectors": [
             true,
             {
-                "message": "se ha ducplicado el nombre de un selector"
+                "message": "se ha duplicado el nombre de un selector"
             }
         ],
         "color-no-invalid-hex": [
@@ -31,7 +31,7 @@
         "declaration-block-semicolon-newline-after": [
             "always",
             {
-                "message": "Hay una linea vacia despues de un contenedortecnico__ul y coma"
+                "message": "Hay una linea vacia despues de un punto y coma"
             }
         ]
     }
